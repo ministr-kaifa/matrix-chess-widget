@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px;
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;       /* высота кнопки */
+  padding: 0 12px;    /* горизонтальные отступы */
+  font-size: 14px;
+  border: 1px solid red;
+  border-radius: 4px;
+  background: transparent;
+  color: red;
+  cursor: pointer;
+}
+
+.logout-btn .avatar {
+  height: 100%;       /* подстраиваем под высоту кнопки */
+  width: auto;        /* сохраняем пропорции */
+  border-radius: 50%;
+  object-fit: cover;
+}
