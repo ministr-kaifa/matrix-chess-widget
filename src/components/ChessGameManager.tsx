@@ -155,6 +155,7 @@ export default function ChessGameManager({ apiToken }: { apiToken: string }) {
   }
 
   function sendMove(move: PieceDropHandlerArgs, gameState: GameState) {
+    console.log("gameState: " + JSON.stringify(gameState));
     const moveEvent: ChessMoveEvent = { ...move, gameId: currentGameRef.current?.gameId! };
     if (currentGameRef.current?.opponent !== "*") {
       console.log(`sending move: ${JSON.stringify(moveEvent)}`);
